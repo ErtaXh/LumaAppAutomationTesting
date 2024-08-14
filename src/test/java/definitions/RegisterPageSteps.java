@@ -48,9 +48,9 @@ public class RegisterPageSteps {
         List<Map<String, String>> credentials = dataTable.asMaps(String.class, String.class);
 
 
-            String firstname = credentials.get(0).get("firstName");
-            String lastname = credentials.get(0).get("lastName");
-            String password = credentials.get(0).get("password");
+            String firstname = credentials.get(0).get("firstName").trim();
+            String lastname = credentials.get(0).get("lastName").trim();
+            String password = credentials.get(0).get("password").trim();
 
             System.out.println(firstname);
             System.out.println(lastname);

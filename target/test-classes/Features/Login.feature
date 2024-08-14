@@ -16,7 +16,9 @@ Feature: Sign In Action
     When the user logs in with valid credentials
     Then the username is displayed in the top-right corner of the page
 
-#  Scenario: As a logged-in user, I want to sign out
-#    Given the user is logged in
-#    When the user clicks the Sign Out on the User profile
-#    Then the user is logged out
+  Scenario: As a logged-in user, I want to sign out
+    Given the user has already logged in to the application
+      | firstName | lastName | password     |
+      | erta      | xhixho   | Password123! |
+    When the user clicks the Sign Out on the User profile
+    Then the user is logged out

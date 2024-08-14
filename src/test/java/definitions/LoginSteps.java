@@ -68,10 +68,14 @@ public class LoginSteps {
     }
     @Then("the username is displayed in the top-right corner of the page")
     public void the_username_is_displayed_in_the_top_right_corner_of_the_page() {
-//        ConfigReader configReader = new ConfigReader();
-//        Assert.assertEquals(configReader.getProperty("username")+"!",homePage.getUsername());
+        ConfigReader configReader = new ConfigReader();
+        Assert.assertEquals(configReader.getProperty("username")+"!",homePage.getUsername());
     }
 
+    @When("the user clicks the Sign Out on the User profile")
+    public void theUserClicksTheSignOutOnTheUserProfile() {
 
+        mainPage =  accountInformationPage.clickSignOut();
+    }
 }
 

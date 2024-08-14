@@ -31,7 +31,7 @@ public class HomePage extends BasePage {
     WebElement jacketTabElement;
 
     public String getUsername(){
-        return welcomeElement.getText().split(",")[1];
+        return welcomeElement.getText().split(",")[1].trim().replace(" ", "");
     }
 
     public JacketPage clickJacket(){
