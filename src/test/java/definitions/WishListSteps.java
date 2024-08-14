@@ -59,6 +59,6 @@ public class WishListSteps {
     @And("on User Profile is displayed the correct number of items {int}")
     public void onUserProfileIsDisplayedTheCorrectNumberOfItems(int itemsCount) {
 
-        Assert.assertTrue(wishListPage.getkWishListCount() == itemsCount);
+        Assert.assertTrue(wishListPage.getWishListCount() == itemsCount);
     }
 }

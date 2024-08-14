@@ -32,7 +32,7 @@ public class WishListPage extends BasePage{
         return messageElement.isDisplayed();
     }
 
-    public int getkWishListCount(){
+    public int getWishListCount(){
         WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(dropdownElement));
         dropdownElement.click();
