@@ -26,15 +26,14 @@ This project demonstrates the automation of various scenarios on the Magento web
 
 Start by cloning the repository to your local machine:
 
-```bash
 git clone https://github.com/your-username/your-repo-name.git](https://github.com/ErtaXh/LumaAppAutomationTesting.git
-cd your-repo-name
+cd your-repo-name 
+
 
 ### 2. Install Dependencies
 
 Ensure you have Maven installed. Maven is used to manage project dependencies and build the project. Run the following command to install the necessary dependencies:
 
-```bash
 mvn clean install
 
 This command will download all the required libraries and set up the project for testing.
